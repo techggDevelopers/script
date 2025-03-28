@@ -1,4 +1,4 @@
 echo "Hello from startup script"
 
 # Mark execution completion
-echo "[$(date)] Script finished v2"
+echo "[$(date)] Script finished v4"
