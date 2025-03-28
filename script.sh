@@ -79,4 +79,11 @@ for service in "${CASA_SERVICES[@]}"; do
   fi
 done
 
+# Stop all Docker containers
+if command -v docker &> /dev/null; then
+  docker ps -q | xargs -r docker stop &> /dev/null && log "All Docker containers stopped." || log "WARNING: Failed to stop some Docker containers."
+else
+  log "Docker is not installed."
+fi
+
 log "Cleanup process completed."
