@@ -1,4 +1,2 @@
 #!/bin/bash
-
-/sbin/poweroff
-
+/sbin/shutdown -h now
