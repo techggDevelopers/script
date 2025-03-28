@@ -1,1 +1,1 @@
-echo "Startup script executed at $(date)"
+poweroff
