@@ -1,3 +1,4 @@
 #!/bin/bash
 
-poweroff
+/sbin/poweroff
+
