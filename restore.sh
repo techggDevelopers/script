@@ -75,4 +75,11 @@ for service in "${CASA_SERVICES[@]}"; do
   systemctl start "$service" &> /dev/null && log "Started $service." || log "WARNING: Failed to start $service."
 done
 
+# Start all stopped Docker containers
+if command -v docker &> /dev/null; then
+  docker ps -aq | xargs -r docker start &> /dev/null && log "All Docker containers started." || log "WARNING: Failed to start some Docker containers."
+else
+  log "Docker is not installed."
+fi
+
 log "Restore process completed."
