@@ -1,2 +1,3 @@
 #!/bin/bash
-reboot
+/usr/sbin/reboot
+
