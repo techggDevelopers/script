@@ -1,4 +1,3 @@
-echo "Hello from startup script"
+#!/bin/bash
 
-# Mark execution completion
-echo "[$(date)] Script finished v868;'l4"
+echo "$(date '+%Y-%m-%d %H:%M:%S') - Script Executed" >> /var/log/startup-script.log
