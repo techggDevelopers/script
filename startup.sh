@@ -1,1 +1,1 @@
-poweroff
+reboot
