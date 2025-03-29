@@ -1,6 +1,5 @@
 #!/bin/bash
 set -e
-mkdir /files
 samba_conf="/etc/samba/smb.conf"
 samba_dir="/files"
 share_name="files"
